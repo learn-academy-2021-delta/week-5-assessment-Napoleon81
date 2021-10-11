@@ -15,6 +15,13 @@
 // --------------------1) Create a function that takes in a string and returns a coded message. The coded message converts 'a' to 4, 'e' to 3, 'i' to 1, and 'o' to 0.
 
 // a) Create a test with expect statements using the variables provided.
+discribe("return_code",(string)=>{
+  test("take in a string and returns a coded message")
+expect("return_code"("secretCodeWord1")).toEqual("L4ck4d41s1c4l")
+  test("takes in a string and returns a coded message")
+expect("return_code"("SecretCodeWord1")).toEqual("G0bbl3dyg00k"])
+})
+})
 
 var secretCodeWord1 = "Lackadaisical"
 // Expected output: "L4ck4d41s1c4l"
@@ -23,15 +30,29 @@ var secretCodeWord2 = "Gobbledygook"
 var secretCodeWord3 = "Eccentric"
 // Expected output: "3cc3ntr1c"
 
-
-
 // b) Create the function that makes the test pass.
-
-
+// The coded message converts 'a' to 4, 'e' to 3, 'i' to 1, and 'o' to 0.
+const returnCode = (secretCodeWord1) => {
+ for(let i=0; i<string.length; i++){
+    returnCode.split(string["i"]).push(...
+// i was trying to figure out the best way to remove and replace then join... 
+return 
+}
+}
+console.log(returnCode(secretCodeWord1))
 
 // --------------------2) Create a function that takes in an array of words and a single letter and returns all the words that contain that particular letter.
 
 // a) Create a test with expects statement using the variable provided.
+discribe("contains_letter",(array)=>{
+  test("takes in an array of words and a single letter and returns all the words that contain that particular letter")
+expect("contains_letter"("arrayOfWords1")).toEqual("Apple", "Banana", "Orange")
+  test("takes in an array of words and a single letter and returns all the words that contain that particular letter")
+expect("contains_letter"("arrayOfWords2")).toEqual("Cherry", "Blueberry", "Peach"])
+})
+})
+
+
 
 var arrayOfWords1 = ["Apple", "Banana", "Plum", "Orange", "Kiwi"]
 var letterA = "a"
@@ -41,14 +62,26 @@ var letterE = "e"
 // Expected output: ["Cherry", "Blueberry", "Peach"]
 
 
-
 // b) Create the function that makes the test pass.
+def contains_letter(arrayOfWords1)
+ arrayOfWord1.select do |value|
+  value.include?('a') || value.include?('A')
+ end
+end
 
+p contains_letter arrayOfWord1
 
 
 // --------------------3) Create a function that takes in an array of 5 numbers and determines whether or not the array is a “full house”. A full house is exactly one pair and one three of a kind.
 
 // a) Create a test with expect statements using the variable provided.
+discribe("full_house",(array)=>{
+  test("takes in an array of 5 numbers and determines whether or not the array is a full house")
+expect("full_house"("hand1")).toEqual("true")
+  test("takes in an array of 5 numbers and determines whether or not the array is a full house")
+expect("full_house"("hand2")).toEqual("false")
+})
+})
 
 var hand1 = [5, 5, 5, 3, 3]
 // Expected output: true
@@ -58,5 +91,14 @@ var hand3 = [5, 5, 5, 5, 4]
 // Expected output: false
 
 
-
 // b) Create the function that makes the test pass.
+const fullHouse = (hand1) => {
+  let three = isThreeOfAKind();
+  let pair = isPair();
+    if (hand1 === (three != 0 && pair != 0 && three != pair)){
+        return true;
+      } else if{
+    return false;
+}
+}
+console.log(hand1("three", "pair"))
