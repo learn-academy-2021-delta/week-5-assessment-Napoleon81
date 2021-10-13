@@ -16,6 +16,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
 2. What is a block in Ruby?
 
   Your answer: A block in Ruby are anonymous functions or chunks of code that can be passed to a method as a way of grouping statements.
+  #Do and key word
 
 
   Researched answer:A block in Ruby are anonymous functions or chunks of code that can be passed to a method as a way of grouping statements.
